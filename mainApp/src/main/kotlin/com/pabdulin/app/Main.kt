@@ -1,4 +1,4 @@
-package com.pabdulin.mainApp
+package com.pabdulin.app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -17,6 +17,7 @@ fun main(args: Array<String>) {
 class MainController {
 
     @GetMapping(path = ["/"])
+    @Suppress("FunctionOnlyReturningConstant")
     fun helloThere(): String {
         return """{"message": "HelloThere v1"}"""
     }

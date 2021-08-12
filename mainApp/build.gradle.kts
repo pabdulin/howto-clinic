@@ -1,5 +1,3 @@
-import org.gradle.api.tasks.testing.logging.TestExceptionFormat
-import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
@@ -7,6 +5,7 @@ buildscript {
         jcenter()
         mavenCentral()
         mavenLocal()
+
     }
     dependencies {
         classpath(Libs.kotlin_stdlib)
@@ -19,50 +18,50 @@ repositories {
     jcenter()
     mavenCentral()
     mavenLocal()
-    maven(url = "https://dl.bintray.com/konform-kt/konform")
 }
 
 plugins {
     java
     kotlin("jvm")
-    id("org.springframework.boot") version "2.3.0.RELEASE"
-    id("io.spring.dependency-management") version "1.0.9.RELEASE"
-    kotlin("plugin.spring") version "1.3.72"
+    id("org.springframework.boot") version Vers.springBoot
+    id("io.spring.dependency-management") version Vers.springDependencyVersion
+    kotlin("plugin.spring") version Global.kotlin
+    id("io.gitlab.arturbosch.detekt") version Vers.detektVersion
+    jacoco
 }
 
-subprojects {
-    group = "com.pabdulin.mainApp"
 
-    apply {
-        plugin("java")
-    }
 
-    repositories {
-        jcenter()
-        mavenCentral()
-        mavenLocal()
-        maven(url = "https://dl.bintray.com/konform-kt/konform")
-    }
+detekt {
+    config = files("${project.parent?.projectDir}/detekt/config.yml")
+    buildUponDefaultConfig = true
+}
 
-    tasks {
-        withType<KotlinCompile> {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
-        }
-        withType<Test> {
-            useJUnitPlatform()
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+}
 
-            maxParallelForks = 10
-
-            testLogging {
-                events(TestLogEvent.PASSED, TestLogEvent.FAILED, TestLogEvent.SKIPPED)
-                showStandardStreams = true
-                exceptionFormat = TestExceptionFormat.FULL
+tasks.jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = "0.4".toBigDecimal()
             }
         }
     }
 }
+
+tasks.test {
+    useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport)
+    finalizedBy(tasks.jacocoTestCoverageVerification)
+}
+
+
+
+
+
+
 dependencies {
     // kotlin
     implementation(kotlin("stdlib-jdk8"))
@@ -71,14 +70,9 @@ dependencies {
     // spring
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
 }
 
 val compileKotlin: KotlinCompile by tasks
