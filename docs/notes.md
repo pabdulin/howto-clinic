@@ -11,3 +11,9 @@
 ## template improvements
 1. jcenter is shutting down, remove.
 
+## course
+ADR sample: https://github.com/surovtsev/madr-ru/blob/main/template/template.md
+
+## powershell
+[Automatic Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.1)
+[Suppressing The Command Window Opening When Using Start-Process](https://stackoverflow.com/questions/35113917/suppressing-the-command-window-opening-when-using-start-process)
