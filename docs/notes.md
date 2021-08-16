@@ -15,5 +15,16 @@
 ADR sample: https://github.com/surovtsev/madr-ru/blob/main/template/template.md
 
 ## powershell
-[Automatic Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.1)
+[about_Automatic_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.1)
 [Suppressing The Command Window Opening When Using Start-Process](https://stackoverflow.com/questions/35113917/suppressing-the-command-window-opening-when-using-start-process)
+[Windows PowerShell Cheatsheet.](https://www.theochem.ru.nl/~pwormer/teachmat/PS_cheat_sheet.html)
+[about_Operators](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.1)
+[about_Functions_Advanced_Parameters](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-7.1)
+
+## java vs .net refs
+[Integrating .NET projects with Gradle](https://schneide.blog/2018/03/20/integrating-net-projects-with-gradle/)
+[Comparison of C Sharp and Java](https://en.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Java)
+[Java to C# – C# to Java](https://betterprogramming.pub/java-to-c-c-to-java-f766c9f659c4)
+
+## architecture
+[Архитектура в масштабе или как мы в Tinkoff принимаем архитектурные решения](https://apolomodov.medium.com/architecture-decisions-6cff1a6bac1a)
