@@ -28,3 +28,8 @@ ADR sample: https://github.com/surovtsev/madr-ru/blob/main/template/template.md
 
 ## architecture
 [Архитектура в масштабе или как мы в Tinkoff принимаем архитектурные решения](https://apolomodov.medium.com/architecture-decisions-6cff1a6bac1a)
+
+## fitness functions
+[Writing ArchUnit style tests for .Net and C# to enforce architecture rules](https://www.ben-morris.com/writing-archunit-style-tests-for-net-and-c-for-self-testing-architectures/)
+
+
