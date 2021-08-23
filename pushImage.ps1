@@ -9,4 +9,4 @@ if ($imageTag -eq "")
 	$imageTag = "latest"
 }
 
-pwsh ./mainApp/buildImage.ps1 $imageTag
+pwsh ./mainApp/pushImage.ps1 $imageTag

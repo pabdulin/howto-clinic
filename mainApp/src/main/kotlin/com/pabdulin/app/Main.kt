@@ -19,6 +19,6 @@ class MainController {
     @GetMapping(path = ["/"])
     @Suppress("FunctionOnlyReturningConstant")
     fun helloThere(): String {
-        return """{"message": "HelloThere v1"}"""
+        return """{"message": "Hello v2 in AWS!"}"""
     }
 }

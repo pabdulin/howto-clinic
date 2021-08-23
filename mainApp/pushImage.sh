@@ -7,7 +7,7 @@ if [ -z "$1" ]
     echo No image tag provided. latest will be used
     imageTag=latest
 fi
-repositoryName=613445080628.dkr.ecr.us-east-2.amazonaws.com/mainapp
+repositoryName=963026277714.dkr.ecr.eu-central-1.amazonaws.com/mainapp
 imageFullName=$repositoryName:$imageTag
 
 echo [Main app STARTING] pushing image $imageFullName...

@@ -2,13 +2,14 @@ param (
     [parameter(Mandatory=$false,Position=0)]
     [string]$imageTag
 )
+$ErrorActionPreference = "Stop"
 
 if ($imageTag -eq "")
 {
 	$imageTag = "latest"
 }
 
-$repositoryName="someid.dkr.ecr.us-east-2.amazonaws.com/mainapp"
+$repositoryName="963026277714.dkr.ecr.eu-central-1.amazonaws.com/mainapp"
 $imageFullName="${repositoryName}:${imageTag}"
 
 echo "[Main App STARTING] building $imageFullName..."

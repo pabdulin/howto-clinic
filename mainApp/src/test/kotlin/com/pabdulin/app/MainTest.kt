@@ -22,6 +22,6 @@ class MainTest {
             .andReturn()
             .response.contentAsString
 
-        Assertions.assertEquals(content, """{"message": "HelloThere v1"}""")
+        Assertions.assertEquals(content, """{"message": "Hello v2 in AWS!"}""")
     }
 }
