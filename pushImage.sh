@@ -8,4 +8,5 @@ if [ -z "$1" ]
     imageTag=latest
 fi
 
+chmod +x ${BASH_SOURCE%/*}/mainApp/pushImage.sh
 (exec "${BASH_SOURCE%/*}/mainApp/pushImage.sh" $imageTag)
