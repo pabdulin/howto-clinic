@@ -14,6 +14,11 @@
 ## course
 ADR sample: https://github.com/surovtsev/madr-ru/blob/main/template/template.md
 
+## bash on Windows
+Just used Git Bash that comes with Git for Windows
+[Weird control characters from Gradle in Windows 10](https://stackoverflow.com/questions/45301354/weird-control-characters-from-gradle-in-windows-10)
+ https://superuser.com/questions/413073/windows-console-with-ansi-colors-handling/1050078
+
 ## powershell
 [about_Automatic_Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.1)
 [Suppressing The Command Window Opening When Using Start-Process](https://stackoverflow.com/questions/35113917/suppressing-the-command-window-opening-when-using-start-process)
