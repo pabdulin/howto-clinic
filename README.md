@@ -12,7 +12,7 @@ A 'HowTo' course 'Clinic' homework project.
 - Code-quality checks must pass ([detekt](https://github.com/detekt/detekt)).
 - Code-style checks must pass ([detekt](https://github.com/detekt/detekt)).
 - No warnings allowed.
-- Code-coverage minimun of 80% required ([JaCoCo](https://www.eclemma.org/jacoco/)).
+- Code-coverage minimun of 80% required ([JaCoCo](https://github.com/jacoco/jacoco)).
 
 ## How to build
 [Gradle](https://gradle.org/) is used as a build tool for the project (Kotlin DSL type).
