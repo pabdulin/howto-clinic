@@ -8,3 +8,9 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 ## docker
 [To authenticate Docker to an Amazon ECR private registry with get-login-password](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html)
 `aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 963026277714.dkr.ecr.eu-central-1.amazonaws.com`
+
+## how to stop service from execution (to avoid costs)
+1. Adjust service config with number of tasks = 0, and min healthy percent 0.
+2. aws ecs list-services --cluster "course"
+3. aws ecs list-tasks --cluster "course" --service "app-service"
+4. aws ecs stop-task --cluster "course" --task "<taskid>"

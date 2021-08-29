@@ -14,9 +14,6 @@ containerName="dkr-main-app"
 containerInternalPort=8080
 containerExternalPort=8081
 
-echo [Main app] stop container $containerName
-docker stop -t 1 $containerName
-echo [Main app] remove container $containerName
-docker rm -f $containerName
+# main script body
 echo [Main app] run container $containerName on port $containerExternalPort
 docker run --name $containerName -d -p $containerExternalPort:$containerInternalPort $imageFullName
