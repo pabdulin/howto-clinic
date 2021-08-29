@@ -7,6 +7,7 @@
 ## gradle 
 1. use "gradle --stop" to stop running servers for whatever reason
 2. use .\gradlew -q projects to check projects structure seealso: https://docs.gradle.org/current/userguide/multi_project_builds.html
+3. [How to fail your Gradle build on certain Kotlin warnings](https://medium.com/dipien/fail-your-build-on-kotlin-warnings-96c4d9b3fd33)
 
 ## template improvements
 1. jcenter is shutting down, remove.

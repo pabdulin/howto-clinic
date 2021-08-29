@@ -9,13 +9,13 @@ A 'HowTo' course 'Clinic' homework project.
 - A production instance deployed as a docker image to AWS PaaS - 'AWS Elastic Container Service' (AWS ECS).
 
 ## Rules and requirements
-- Code-quality checks must pass (detekt).
-- Code-style checks must pass (detekt).
+- Code-quality checks must pass ([detekt](https://github.com/detekt/detekt)).
+- Code-style checks must pass ([detekt](https://github.com/detekt/detekt)).
 - No warnings allowed.
-- Code-coverage minimun of 80% required (JaCoCo).
+- Code-coverage minimun of 80% required ([JaCoCo](https://www.eclemma.org/jacoco/)).
 
 ## How to build
-Gradle is used as a build tool for the project.
+[Gradle](https://gradle.org/) is used as a build tool for the project (Kotlin DSL type).
 Run `./build.sh` then `./run.sh` or `./cleanAndRun.sh`.
 
 ## User Stories Map

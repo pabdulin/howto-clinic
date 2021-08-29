@@ -21,7 +21,6 @@ class MainTest {
             .andExpect { status { is2xxSuccessful } }
             .andReturn()
             .response.contentAsString
-
         Assertions.assertEquals(content, """{"message": "Hello v2 in AWS!"}""")
     }
 }
