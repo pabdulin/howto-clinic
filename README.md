@@ -9,10 +9,10 @@ A 'HowTo' course 'Clinic' homework project.
 - A production instance deployed as a docker image to AWS PaaS - 'AWS Elastic Container Service' (AWS ECS).
 
 ## Rules and requirements
-- Code-quality checks must pass.
-- Code-style checks must pass.
+- Code-quality checks must pass (detekt).
+- Code-style checks must pass (detekt).
 - No warnings allowed.
-- Code-coverage minimun of 80% required.
+- Code-coverage minimun of 80% required (JaCoCo).
 
 ## How to build
 Gradle is used as a build tool for the project.

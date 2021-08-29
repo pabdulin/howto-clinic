@@ -8,18 +8,18 @@ style:
   TrailingWhitespace:
     active: true
   UnderscoresInNumericLiterals:
-    active: false
+    active: true
   DataClassContainsFunctions:
-    active: false
+    active: true
   OptionalWhenBraces:
-    active: false
+    active: true
   ReturnCount:
     max: 3
 
 
 exceptions:
   TooGenericExceptionCaught:
-    active: false
+    active: true
 
 performance:
   SpreadOperator:
@@ -27,46 +27,46 @@ performance:
 
 complexity:
   LabeledExpression:
-    active: false
+    active: true
 
 
 formatting:
   ParameterListWrapping:
-    active: false
+    active: true
   AnnotationOnSeparateLine:
-    active: false
+    active: true
   CommentSpacing:
-    active: false
+    active: true
   NoMultipleSpaces:
-    active: false
+    active: true
   NoConsecutiveBlankLines:
-    active: false
+    active: true
   SpacingAroundColon:
-    active: false
+    active: true
   NoBlankLineBeforeRbrace:
-    active: false
+    active: true
   NoTrailingSpaces:
-    active: false
+    active: true
   SpacingAroundKeyword:
-    active: false
+    active: true
   SpacingAroundComma:
-    active: false
+    active: true
   MaximumLineLength:
-    active: false
+    active: true
   SpacingAroundCurly:
-    active: false
+    active: true
   SpacingAroundOperators:
-    active: false
+    active: true
   SpacingAroundParens:
-    active: false
+    active: true
   NoSemicolons:
-    active: false
+    active: true
   NoWildcardImports:
-    active: false
+    active: true
   ImportOrdering:
-    active: false
+    active: true
   NoLineBreakBeforeAssignment:
-    active: false
+    active: true
 
 
 comments:
@@ -83,11 +83,11 @@ comments:
 
 naming:
   FunctionMaxLength:
-    active: false
+    active: true
   MatchingDeclarationName:
-    active: false
+    active: true
 
 
 potential-bugs:
   LateinitUsage:
-    active: false
+    active: true
