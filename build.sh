@@ -9,12 +9,4 @@ if [ -z "$1" ]
 fi
 
 # main script body
-# build
-
-# test
-
-# prepare image
-(exec "${BASH_SOURCE%/*}/mainApp/buildImage.sh" $imageTag)
-
-# prepare reports
-
+(exec "${BASH_SOURCE%/*}/mainApp/build.sh" $imageTag)
