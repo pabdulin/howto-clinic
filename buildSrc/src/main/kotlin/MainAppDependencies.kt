@@ -4,16 +4,13 @@ object Vers {
     const val springDependencyVersion = "1.0.9.RELEASE"
     const val detektVersion = "1.10.0"
 
-
     //Dependencies
     val junit = "5.2.0"
     val sl4j = "1.7.25"
     val kotlintest = "3.4.2"
-
 }
 
 object Libs {
-
     //Dependencies
     const val kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Global.kotlin}"
     const val kotlin_jdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Global.kotlin}"
@@ -29,5 +26,4 @@ object Libs {
     val junit_params = "org.junit.jupiter:junit-jupiter-params:${Vers.junit}"
     val junit_engine = "org.junit.jupiter:junit-jupiter-engine:${Vers.junit}"
     val kotlintest = "io.kotlintest:kotlintest-runner-junit5:${Vers.kotlintest}"
-
 }

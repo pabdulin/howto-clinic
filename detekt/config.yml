@@ -1,0 +1,93 @@
+style:
+  NewLineAtEndOfFile:
+    active: true
+  WildcardImport:
+    active: true
+  ExpressionBodySyntax:
+    active: false
+  TrailingWhitespace:
+    active: true
+  UnderscoresInNumericLiterals:
+    active: true
+  DataClassContainsFunctions:
+    active: true
+  OptionalWhenBraces:
+    active: true
+  ReturnCount:
+    max: 3
+
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: true
+
+performance:
+  SpreadOperator:
+    active: false
+
+complexity:
+  LabeledExpression:
+    active: true
+
+
+formatting:
+  ParameterListWrapping:
+    active: true
+  AnnotationOnSeparateLine:
+    active: true
+  CommentSpacing:
+    active: true
+  NoMultipleSpaces:
+    active: true
+  NoConsecutiveBlankLines:
+    active: true
+  SpacingAroundColon:
+    active: true
+  NoBlankLineBeforeRbrace:
+    active: true
+  NoTrailingSpaces:
+    active: true
+  SpacingAroundKeyword:
+    active: true
+  SpacingAroundComma:
+    active: true
+  MaximumLineLength:
+    active: true
+  SpacingAroundCurly:
+    active: true
+  SpacingAroundOperators:
+    active: true
+  SpacingAroundParens:
+    active: true
+  NoSemicolons:
+    active: true
+  NoWildcardImports:
+    active: true
+  ImportOrdering:
+    active: true
+  NoLineBreakBeforeAssignment:
+    active: true
+
+
+comments:
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    active: false
+  EndOfSentenceFormat:
+    active: false
+  CommentOverPrivateProperty:
+    active: false
+  CommentOverPrivateFunction:
+    active: false
+
+naming:
+  FunctionMaxLength:
+    active: true
+  MatchingDeclarationName:
+    active: true
+
+
+potential-bugs:
+  LateinitUsage:
+    active: true

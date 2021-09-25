@@ -12,13 +12,13 @@ fun main(args: Array<String>) {
     runApplication<DemoApplication>(*args)
 }
 
-
 @RestController
 class MainController {
-
     @GetMapping(path = ["/"])
     @Suppress("FunctionOnlyReturningConstant")
     fun helloThere(): String {
+
+
         return """{"message": "Hello v2 in AWS!"}"""
     }
 }

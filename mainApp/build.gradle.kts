@@ -2,10 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
     repositories {
-        jcenter()
         mavenCentral()
         mavenLocal()
-
     }
     dependencies {
         classpath(Libs.kotlin_stdlib)
@@ -30,15 +28,9 @@ plugins {
     jacoco
 }
 
-
-
 detekt {
     config = files("${project.parent?.projectDir}/detekt/config.yml")
     buildUponDefaultConfig = true
-}
-
-tasks.jacocoTestReport {
-    dependsOn(tasks.test)
 }
 
 tasks.jacocoTestCoverageVerification {
@@ -57,10 +49,9 @@ tasks.test {
     finalizedBy(tasks.jacocoTestCoverageVerification)
 }
 
-
-
-
-
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+}
 
 dependencies {
     // kotlin
@@ -78,8 +69,11 @@ dependencies {
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     jvmTarget = "1.8"
+    allWarningsAsErrors = true
 }
+
 val compileTestKotlin: KotlinCompile by tasks
 compileTestKotlin.kotlinOptions {
     jvmTarget = "1.8"
+    allWarningsAsErrors = true
 }
